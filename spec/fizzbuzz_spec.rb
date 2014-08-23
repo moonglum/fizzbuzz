@@ -8,7 +8,7 @@ describe FizzBuzz do
       expect(fizz_buzz.fizz?(9)).to be true
     end
 
-    xit 'returns false if number is not multiply of three' do
+    it 'returns false if number is not multiply of three' do
       expect(fizz_buzz.fizz?(1)).to be false
     end
   end
@@ -20,6 +20,16 @@ describe FizzBuzz do
 
     xit 'returns false if number is not multiply of five' do
       expect(fizz_buzz.buzz?(1)).to be false 
+    end
+  end
+
+  describe '#fizzbuzz?' do
+    xit 'returns true if number is multiply of five and three' do
+      expect(fizz_buzz.buzz?(15)).to be true
+    end
+
+    xit 'returns false if number is not multiply of five and three' do
+      expect(fizz_buzz.buzz?(5)).to be false
     end
   end
 end
